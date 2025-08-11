@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taufeeque Ahmed | Turning ideas into beautiful, functional websites.</title>
+
+    <link href="src/output.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <script src="js/main.js"></script>
+</head>
+
+<body class="scroll-smooth">
+
+    <!-- Preloader -->
+    <div id="preloader"
+        class="fixed inset-0 bg-black z-50 flex items-center justify-center text-white overflow-hidden transition-opacity duration-700">
+        <div class="relative h-screen w-full flex flex-col items-center justify-center">
+
+            <div id="animation-1" class="absolute flex gap-4 transition-all">
+                <p id="text1" class="text-4xl font-light opacity-0 translate-y-8 transition-all duration-500">Designing</p>
+                <p id="text2" class="text-4xl font-semibold opacity-0 translate-y-8 transition-all duration-500">Developing</p>
+                <p id="text3" class="text-4xl font-light opacity-0 translate-y-8 transition-all duration-500">Delivering</p>
+            </div>
+
+            <div id="animation-2" class="absolute flex flex-col items-center opacity-0 transition-opacity duration-500">
+                <div class="relative w-full flex justify-center">
+                    <div id="reveal-box" class="absolute h-10 w-0 bg-[#f30116] z-10"></div>
+                    <p class="text-3xl font-light relative z-20 px-4">Taufeeque Ahmed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="fixed top-0 z-20 w-full backdrop-blur-[15px] bg-[rgba(33,36,40,0.87)] custom-shadow">
+        <div class="container mx-auto py-3 lg:px-8 max-w-7xl flex flex-col md:flex-row items-center justify-between">
+            <!-- logo -->
+            <div class="flex items-center gap-2">
+                <img src="src/images/logo2.png" alt="Logo" class="h-14">
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <ul class="flex gap-8">
+                    <li><a href="#home" class="primary-text text-sm font-light uppercase transition-colors      
+                        duration-300">Home</a>
+                    </li>
+                    <li><a href="#features"
+                            class="primary-text text-sm font-light uppercase transition-colors duration-300">Features</a>
+                    </li>
+                    <li><a href="#portfolio"
+                            class="primary-text text-sm font-light uppercase transition-colors duration-300">Portfolio</a>
+                    </li>
+                    <li><a href="#resume"
+                            class="primary-text text-sm font-light uppercase transition-colors duration-300">Resume</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="primary-text text-sm font-light uppercase transition-colors duration-300">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero pt-20 my-10 scroll-mt-30">
+        <div class="container mx-auto px-4 lg:px-8 max-w-7xl flex flex-col md:flex-row items-center">
+            <!-- Left Side -->
+            <div class="text-left md:w-1/2 space-y-8">
+                <h2 class="text-5xl text-white font-bold leading-tight">
+                    Hi, I'm <span class="gradient-text">Taufeeque Ahmed</span><br>a
+                    <span id="typing-text" class=""></span>
+                </h2>
+                <p class="primary-text text-lg font-light mt-4">
+                    I use code and design to build smooth, responsive experiences across all devices. I'm not just developing websites—I'm crafting digital journeys that load fast, look sharp, and work beautifully. Every detail I add has a purpose, whether it's enhancing usability, optimizing performance, or guiding the user with intention.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                    <!-- Column 1: Explore with Me -->
+                    <div class="space-y-4">
+                        <h5 class="primary-text text-base tracking-wider font-light uppercase">
+                            Explore with me
+                        </h5>
+    
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/taufeeque-ahmed/"  target="_blank"
+                                class="flex items-center justify-center w-16 h-16 rounded-lg custom-shadow bg-gradient-to-br from-[#1e2024] to-[#23272b] primary-text transition duration-300 transform hover:-translate-y-2">
+                                <i class="fa-brands fa-linkedin-in text-2xl"></i>
+                            </a>
+    
+                            <a href="#"
+                                class="flex items-center justify-center w-16 h-16 rounded-lg custom-shadow bg-gradient-to-br from-[#1e2024] to-[#23272b] primary-text transition duration-300 transform hover:-translate-y-2">
+                                <i class="fa-brands fa-github text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <!-- Column 2: Download Resume -->
+                    <div class="space-y-4">
+                        <h5 class="primary-text text-base tracking-wider font-light uppercase">
+                            Download
+                        </h5>
+                        <div class="flex space-x-4">
+                            <a href="src/Taufeeque-Ahmed-Resume.pdf" download="Taufeeque Ahmed Resume.pdf"
+                                class="flex items-center gap-2 h-16 px-6 py-4 rounded-lg custom-shadow bg-gradient-to-br from-[#1e2024] to-[#23272b] primary-text transition duration-300 transform hover:-translate-y-2">
+                                <i class="fa-solid fa-download text-xl"></i>
+                                <span class="text-sm font-light uppercase">Resume</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Side Image -->
+            <div class="md:w-1/3 relative ml-auto">
+                <div
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-full rounded-b-none w-full h-full overflow-hidden flex items-center justify-center">
+                    <img src="src/images/taufiq.png" alt="Banner Image" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-20 pb-20 w-full scroll-mt-30" id="features">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <!-- Top two full-width blocks in a flex row -->
+            <div class="flex flex-col md:flex-row md:space-x-12">
+                <!-- Block 1 -->
+                <div class="w-full mb-10 md:mb-0">
+                    <h5 class="uppercase"><span class="secondary-text">Features</span></h5>
+                    <h2 class="text-5xl primary-text font-bold leading-tight">What I Can Do</h2>
+                </div>
+            </div>
+
+            <!-- 6 feature cards in full-width grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                <!-- Feature Card -->
+                <div
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 flex flex-col text-left transition-transform duration-300 transform hover:-translate-y-3.5">
+                    <img src="src/images/ui.png" alt="Feature Icon" class="w-14 h-14 mb-8 opacity-60">
+                    <h3 class="text-2xl font-semibold primary-text">UI/UX Design</h3>
+                    <p class="primary-text mt-6 font-lg font-light">Creating intuitive and engaging interfaces that enhance the overall user journey.</p>
+                </div>
+
+                <!-- Repeat for each feature card -->
+                <div
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 flex flex-col text-left transition-transform duration-300 transform hover:-translate-y-3.5">
+                    <img src="src/images/web.png" alt="Feature Icon" class="w-14 h-14 mb-8 opacity-60">
+                    <h3 class="text-2xl font-semibold primary-text">Web Development</h3>
+                    <p class="primary-text mt-6 font-lg font-light">Building clean, responsive, and user-focused websites tailored for modern digital needs.</p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 flex flex-col text-left transition-transform duration-300 transform hover:-translate-y-3.5">
+                    <img src="src/images/wordpress.png" alt="Feature Icon" class="w-14 h-14 mb-8 opacity-60">
+                    <h3 class="text-2xl font-semibold primary-text">Wordpress Development</h3>
+                    <p class="primary-text mt-6 font-lg font-light">Custom-designed, easy-to-manage websites that offer flexibility and functionality.</p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 flex flex-col text-left transition-transform duration-300 transform hover:-translate-y-3.5">
+                    <img src="src/images/seo.png" alt="Feature Icon" class="w-14 h-14 mb-8 opacity-60">
+                    <h3 class="text-2xl font-semibold primary-text">SEO</h3>
+                    <p class="primary-text mt-6 font-lg font-light">Enhancing website visibility and performance through speed and search optimization.</p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 flex flex-col text-left transition-transform duration-300 transform hover:-translate-y-3.5">
+                    <img src="src/images/bug.png" alt="Feature Icon" class="w-14 h-14 mb-8 opacity-60">
+                    <h3 class="text-2xl font-semibold primary-text">Bug Fixing & Debugging</h3>
+                    <p class="primary-text mt-6 font-lg font-light">Identifying and resolving frontend issues to ensure smooth performance and error-free experiences.</p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 flex flex-col text-left transition-transform duration-300 transform hover:-translate-y-3.5">
+                    <img src="src/images/version-control.png" alt="Feature Icon" class="w-14 h-14 mb-8 opacity-60">
+                    <h3 class="text-2xl font-semibold primary-text">Version Control</h3>
+                    <p class="primary-text mt-6 font-lg font-light">Managing and tracking code changes efficiently to ensure smooth collaboration and rollback options.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-20 pb-10 w-full scroll-mt-30" id="portfolio">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+    
+            <!-- Header Section -->
+            <div class="mb-16">
+                <h5 class="uppercase secondary-text">Visit my portfolio</h5>
+                <h2 class="text-5xl font-bold leading-tight primary-text">My Portfolio</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                <!-- Portfolio Card -->
+                <a href="https://cyboshield.com/stage/" target="_blank" 
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-5 flex flex-col text-left group">
+                    <div class="overflow-hidden h-48 mb-4 rounded-lg ">
+                        <img src="src/images/cyboshield.jpg" alt="CyboShield"
+                            class="w-full object-cover transition-transform duration-2000 ease-in-out group-hover:-translate-y-215">
+                    </div>
+                    <h3 class="text-xl font-normal primary-text">CyboShield</h3>
+                </a>
+                <a href="https://emcuae.ae/" target="_blank" 
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-5 flex flex-col text-left group">
+                    <div class="overflow-hidden h-48 mb-4 rounded-lg ">
+                        <img src="src/images/emc.jpg" alt="Eminence Consultancy (EMC)"
+                            class="w-full object-cover transition-transform duration-2000 ease-in-out group-hover:-translate-y-165">
+                    </div>
+                    <h3 class="text-xl font-normal primary-text">Eminence Consultancy (EMC)</h3>
+                </a>
+                <a href="https://greystarrealtors.com/" target="_blank" 
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-5 flex flex-col text-left group">
+                    <div class="overflow-hidden h-48 mb-4 rounded-lg ">
+                        <img src="src/images/greystarrealtors.jpg" alt="greystarrealtors"
+                            class="w-full object-cover transition-transform duration-2000 ease-in-out group-hover:-translate-y-350">
+                    </div>
+                    <h3 class="text-xl font-normal primary-text">Greystar Realtors</h3>
+                </a>
+                <!-- <a href="" target="_blank" 
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-5 flex flex-col text-left group">
+                    <div class="overflow-hidden h-48 mb-4 rounded-lg ">
+                        <img src="src/images/.jpg" alt=""
+                            class="w-full object-cover transition-transform duration-2000 ease-in-out group-hover:-translate-y-215">
+                    </div>
+                    <h3 class="text-xl font-medium primary-text"></h3>
+                </a>
+                <a href="" target="_blank" 
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-5 flex flex-col text-left group">
+                    <div class="overflow-hidden h-48 mb-4 rounded-lg ">
+                        <img src="src/images/.jpg" alt=""
+                            class="w-full object-cover transition-transform duration-2000 ease-in-out group-hover:-translate-y-215">
+                    </div>
+                    <h3 class="text-xl font-medium primary-text"></h3>
+                </a>
+                <a href="" target="_blank" 
+                    class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-5 flex flex-col text-left group">
+                    <div class="overflow-hidden h-48 mb-4 rounded-lg ">
+                        <img src="src/images/.jpg" alt=""
+                            class="w-full object-cover transition-transform duration-2000 ease-in-out group-hover:-translate-y-215">
+                    </div>
+                    <h3 class="text-xl font-medium primary-text"></h3>
+                </a> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mt-20 pb-10 w-full scroll-mt-30" id="resume">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+    
+            <!-- Header Section -->
+            <div class="mb-16">
+                <h5 class="uppercase secondary-text">13+ Years of Experience</h5>
+                <h2 class="text-5xl font-bold leading-tight primary-text">My Resume</h2>
+            </div>
+    
+            <div class="w-full">
+                <!-- Tabs Navigation -->
+                <div
+                    class="flex space-x-2 justify-center bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg">
+                    <button
+                        class="tab-btn p-5 w-full cursor-pointer text-xl rounded-lg primary-text transition duration-300 active-tab"
+                        data-tab="tab1">Professional Skills</button>
+                    <button class="tab-btn p-5 w-full cursor-pointer text-xl rounded-lg primary-text transition duration-300"
+                        data-tab="tab2">Experience</button>
+                    <button class="tab-btn p-5 w-full cursor-pointer text-xl rounded-lg primary-text transition duration-300"
+                        data-tab="tab3">Education</button>
+                </div>
+    
+                <!-- Tabs Content -->
+                <div class="tab-content w-full text-gray-300 mt-6">
+                    <div id="tab1" class="tab-panel block w-full">
+                        <div class="grid grid-cols-1 mt-15">
+                            <h2 class="primary-text text-2xl mb-8">Languages, Frameworks and Tools</h2>
+                            <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-6">
+                               <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    HTML5
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    CSS3
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    SCSS
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    JavaScript
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    jQuery
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    React JS
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    Tailwind CSS
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    Bootstrap
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    WordPress
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    VS Code
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    Git & GitHub
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    Figma
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    Adobe Photoshop
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    Adobe Illustrator
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    CorelDraw
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    MySQL
+                                </li>
+                            </ul>
+                        </div>
+
+                         <div class="grid grid-cols-1 mt-10">
+                            <h2 class="primary-text text-2xl mb-8">Project Management</h2>
+                            <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-6">
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    Jira
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    Trello
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    Asana
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="grid grid-cols-1 mt-10">
+                            <h2 class="primary-text text-2xl mb-8">Marketing</h2>
+                            <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-6">
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    SEO
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    Google Analytics
+                                </li>
+                                <li class="flex items-center gap-3 rounded-md p-3 bg-[#23272b] custom-shadow text-center justify-center">
+                                    Google Search Console
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div id="tab2" class="tab-panel hidden w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-30 mt-15">
+                            <!-- Column 1 -->
+                            <div class="flex flex-col border-l-[5px] border-[#1c1e22] pl-10">
+                                <div class="relative custom-before bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 text-left mb-15">
+                                    <h3 class="text-2xl font-semibold primary-text">Senior Web Developer</h3>
+                                    <p class="primary-text mt-4 text-lg font-light">Agile Testing Alliance</p>
+                                    <p class="primary-text mt-4 text-sm font-light">Jan 2019 - March 2025<br>Navi Mumbai</p>
+                                </div>
+                                <div class="relative custom-before bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 text-left">
+                                    <h3 class="text-2xl font-semibold primary-text">Junior Web Developer</h3>
+                                    <p class="primary-text mt-4 text-lg font-light">Freewave Tech Solutions Pvt. Ltd.</p>
+                                    <p class="primary-text mt-4 text-sm font-light">Mar 2012 - Jun 2014<br>Mumbai</p>
+                                </div>
+                            </div>
+    
+                            <!-- Column 2 -->
+                            <div class="flex flex-col border-l-[5px] border-[#1c1e22] pl-10">
+                                <div class="relative custom-before bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 text-left mb-15">
+                                    <h3 class="text-2xl font-semibold primary-text">Senior Web Developer</h3>
+                                    <p class="primary-text mt-4 text-lg font-light">QAAgility Technologies Pvt. Ltd.</p>
+                                    <p class="primary-text mt-4 text-sm font-light">Jun 2014 - Dec 2018<br>Navi Mumbai</p>
+                                </div>
+                                <div class="relative custom-before bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 text-left">
+                                    <h3 class="text-2xl font-semibold primary-text">Junior Web Developer</h3>
+                                    <p class="primary-text mt-4 text-lg font-light">QAAgility Technologies Pvt. Ltd.</p>
+                                    <p class="primary-text mt-4 text-sm font-light">Sep 2011 – Feb 2012<br>Mumbai</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab3" class="tab-panel hidden w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-30 mt-15">
+                            <!-- Column 1 -->
+                            <div class="flex flex-col border-l-[5px] border-[#1c1e22] pl-10">
+                                <div class="relative custom-before bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 text-left mb-15">
+                                    <h3 class="text-2xl font-semibold primary-text">Bachelor of Commerce – B.Com</h3>
+                                    <p class="primary-text mt-4 text-lg font-light">Vinayaka Mission Sikkim University</p>
+                                    <p class="primary-text mt-4 text-sm font-light">2018<br>Mumbai</p>
+                                </div>
+                               <div class="relative custom-before bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 text-left">
+                                    <h3 class="text-2xl font-semibold primary-text">SSC</h3>
+                                    <p class="primary-text mt-4 text-lg font-light">S.R.W.S. School</p>
+                                    <p class="primary-text mt-4 text-sm font-light">2007<br>Mumbai</p>
+                                </div>
+                            </div>
+    
+                            <!-- Column 2 -->
+                            <div class="flex flex-col border-l-[5px] border-[#1c1e22] pl-10">
+                                <div class="relative custom-before bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 text-left">
+                                    <h3 class="text-2xl font-semibold primary-text">HSC</h3>
+                                    <p class="primary-text mt-4 text-lg font-light">Rizvi College</p>
+                                    <p class="primary-text mt-4 text-sm font-light">2010<br>Mumbai</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mt-20 pb-10 w-full scroll-mt-30" id="contact">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+    
+            <!-- Header Section -->
+            <div class="mb-16">
+                <h5 class="uppercase secondary-text">Contact</h5>
+                <h2 class="text-5xl font-bold leading-tight primary-text">Let's Connect</h2>
+            </div>
+    
+            <!-- Flex layout with custom widths -->
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Left Column (35%) -->
+                <div class="md:w-[35%] w-full bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 text-left">
+                    <img src="src/images/contact.jpg" alt="Contact Icon" class="mb-8 rounded-xl">
+                    <h3 class="text-2xl font-semibold primary-text">Let's Connect</h3>
+                    <p class="primary-text mt-6 font-lg font-light">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <p class="primary-text mt-6 font-lg font-light">
+                        Email: <a href="mailto:taufiq.shaikh403@gmail.com" class="primary-text transition duration-300">taufiq.shaikh403@gmail.com</a><br>
+                        Phone: <a href="tel:+918898441289" class="primary-text transition duration-300">+91 8898441289</a>
+                    </p>
+                    <div class="space-y-4 mt-6">
+                        <h5 class="primary-text text-base tracking-wider font-light uppercase">
+                            Explore with me
+                        </h5>
+    
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/taufeeque-ahmed/" target="_blank"
+                                class="flex items-center justify-center w-16 h-16 rounded-lg custom-shadow bg-gradient-to-br from-[#1e2024] to-[#23272b] primary-text transition duration-300 transform hover:-translate-y-2">
+                                <i class="fa-brands fa-linkedin-in text-2xl"></i>
+                            </a>
+    
+                            <a href="#"
+                                class="flex items-center justify-center w-16 h-16 rounded-lg custom-shadow bg-gradient-to-br from-[#1e2024] to-[#23272b] primary-text transition duration-300 transform hover:-translate-y-2">
+                                <i class="fa-brands fa-github text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column (65%) -->
+                <div class="md:w-[65%] w-full bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-10 text-left">
+                    <!-- Add your contact form or content here -->
+                    <form action="#" method="POST" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="grid grid-cols-1 ">
+                                <label for="name" class="primary-text py-1">Name</label>
+                                <input type="text" name="name" placeholder="Your Name" required
+                                    class="w-full h-16 px-4 rounded-lg bg-[#23272b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f30116] transition duration-300">
+                            </div>
+                            <div class="grid grid-cols-1 ">
+                                <label for="name" class="primary-text py-1">Phone</label>
+                                <input type="text" name="phone" placeholder="Your Phone" required
+                                    class="w-full h-16 px-4 rounded-lg bg-[#23272b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f30116] transition duration-300">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 ">
+                            <label for="name" class="primary-text py-1">Email</label>
+                            <input type="email" name="email" placeholder="Your Email" required
+                                class="w-full h-16 px-4 rounded-lg bg-[#23272b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f30116] transition duration-300">
+                        </div>
+                        <div class="grid grid-cols-1 ">
+                            <label for="name" class="primary-text py-1">Subject</label>
+                            <input type="text" name="subject" placeholder="Subject" required
+                                class="w-full h-16 px-4 rounded-lg bg-[#23272b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f30116] transition duration-300">
+                        </div>
+                        <div class="grid grid-cols-1 ">
+                            <label for="name" class="primary-text py-1">Message</label>
+                            <textarea name="message" rows="4" placeholder="Your Message"
+                                class="w-full h-32 p-4 rounded-lg bg-[#23272b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f30116] transition duration-300 resize-none"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full h-16 mt-2 rounded-lg primary-text bg-gradient-to-br from-[#1e2024] to-[#23272b] font-semibold uppercase transition duration-300 cursor-pointer transform hover:-translate-y-2 focus:outline-none focus:ring-2 focus:ring-[#f30116] custom-shadow">
+                            Send Message
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 mt-10">
+        <div class="container mx-auto px-4 lg:px-8 max-w-7xl text-center">
+            <p class="primary-text text-sm font-light">© 2025 Taufeeque Ahmed. All rights reserved.</p>
+            <p class="primary-text text-sm font-light py-2">
+                Bringing ideas to life with code.
+                <br>
+                Thanks for visiting!.
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Ensure the DOM is loaded before running the script
+        document.addEventListener('DOMContentLoaded', function () {
+            var textArray = [
+                "Web Developer.",
+                "UI/UX Enthusiast.",
+                "Problem Solver."
+            ];
+            var textIndex = 0;
+            var letterIndex = 0;
+            var typingElement = document.getElementById('typing-text');
+            // var cursor = document.getElementById('cursor'); // Not used in this code
+
+            function typeText() {
+                if (textIndex < textArray.length) {
+                    if (letterIndex < textArray[textIndex].length) {
+                        typingElement.innerHTML += textArray[textIndex].charAt(letterIndex);
+                        letterIndex++;
+                        setTimeout(typeText, 50); // Slow typing speed
+                    } else {
+                        textIndex++;
+                        letterIndex = 0;
+                        setTimeout(function () {
+                            typingElement.innerHTML = ''; // Clear the text
+                            if (textIndex >= textArray.length) {
+                                textIndex = 0; // Reset to the first phrase after finishing all
+                            }
+                            typeText(); // Start the next sentence
+                        }, 1000); // Delay between sentences
+                    }
+                }
+            }
+
+            // Start typing effect
+            typeText();
+        });
+    </script>
+    
+</body>
+</html>

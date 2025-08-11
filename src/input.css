@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "tailwindcss";
+
+@layer base {
+    body {
+        font-family: 'Outfit', sans-serif;
+        background-color: #212428;
+    }
+}
+
+:root {
+    --primary-color: #c4cfde;
+    --secondary-color: #f30116;
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+a.primary-text:hover,
+button.primary-text:hover {
+    color: var(--secondary-color);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #f30116, #b0008f, #f30116);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.secondary-text {
+    color: var(--secondary-color);
+}
+
+.active-tab {
+    color: var(--secondary-color);
+    background: linear-gradient(to right, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+.custom-before::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-7px);
+    background: #1c1e22;
+    z-index: 0;
+}
+
+
+@keyframes revealLine {
+    0% {
+        width: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    50% {
+        width: 100%;
+        left: 0%;
+        transform: translateX(0);
+    }
+
+    100% {
+        width: 0%;
+        left: 100%;
+        transform: translateX(0);
+    }
+}
+
+.animate-reveal {
+    animation: revealLine 1s ease forwards;
+}
+
+#cursor {
+    animation: blink 0.8s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.custom-shadow {
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+/* Added styles for typing effect */
+.typing-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    animation: typing 3s steps(30, end), blink 0.8s step-start infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+.dark\:backdrop-blur-2xl {
+    background-color: #ffffff0a;
+}
