@@ -92,7 +92,7 @@
                                 <i class="fa-brands fa-linkedin-in text-2xl"></i>
                             </a>
     
-                            <a href="#"
+                            <a href="https://github.com/Taufs" target="_blank"
                                 class="flex items-center justify-center w-16 h-16 rounded-lg custom-shadow bg-gradient-to-br from-[#1e2024] to-[#23272b] primary-text transition duration-300 transform hover:-translate-y-2">
                                 <i class="fa-brands fa-github text-2xl"></i>
                             </a>
@@ -212,13 +212,13 @@
                     </div>
                     <h3 class="text-xl font-normal primary-text">Eminence Consultancy (EMC)</h3>
                 </a>
-                <a href="https://greystarrealtors.com/" target="_blank" 
+                <a href="https://paperdesk.com/" target="_blank" 
                     class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-5 flex flex-col text-left group">
                     <div class="overflow-hidden h-48 mb-4 rounded-lg ">
-                        <img src="src/images/greystarrealtors.jpg" alt="greystarrealtors"
+                        <img src="src/images/paperdesk.jpg" alt="paperdesk"
                             class="w-full object-cover transition-transform duration-2000 ease-in-out group-hover:-translate-y-350">
                     </div>
-                    <h3 class="text-xl font-normal primary-text">Greystar Realtors</h3>
+                    <h3 class="text-xl font-normal primary-text">Paperdesk</h3>
                 </a>
                 <!-- <a href="" target="_blank" 
                     class="bg-gradient-to-br from-[#1e2024] to-[#23272b] custom-shadow rounded-lg p-5 flex flex-col text-left group">
@@ -454,7 +454,7 @@
                                 <i class="fa-brands fa-linkedin-in text-2xl"></i>
                             </a>
     
-                            <a href="#"
+                            <a href="https://github.com/Taufs" target="_blank"
                                 class="flex items-center justify-center w-16 h-16 rounded-lg custom-shadow bg-gradient-to-br from-[#1e2024] to-[#23272b] primary-text transition duration-300 transform hover:-translate-y-2">
                                 <i class="fa-brands fa-github text-2xl"></i>
                             </a>
@@ -473,23 +473,23 @@
                                     class="w-full h-16 px-4 rounded-lg bg-[#23272b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f30116] transition duration-300">
                             </div>
                             <div class="grid grid-cols-1 ">
-                                <label for="name" class="primary-text py-1">Phone</label>
+                                <label for="phone" class="primary-text py-1">Phone</label>
                                 <input type="text" name="phone" placeholder="Your Phone" required
                                     class="w-full h-16 px-4 rounded-lg bg-[#23272b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f30116] transition duration-300">
                             </div>
                         </div>
                         <div class="grid grid-cols-1 ">
-                            <label for="name" class="primary-text py-1">Email</label>
+                            <label for="email" class="primary-text py-1">Email</label>
                             <input type="email" name="email" placeholder="Your Email" required
                                 class="w-full h-16 px-4 rounded-lg bg-[#23272b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f30116] transition duration-300">
                         </div>
                         <div class="grid grid-cols-1 ">
-                            <label for="name" class="primary-text py-1">Subject</label>
+                            <label for="subject" class="primary-text py-1">Subject</label>
                             <input type="text" name="subject" placeholder="Subject" required
                                 class="w-full h-16 px-4 rounded-lg bg-[#23272b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f30116] transition duration-300">
                         </div>
                         <div class="grid grid-cols-1 ">
-                            <label for="name" class="primary-text py-1">Message</label>
+                            <label for="message" class="primary-text py-1">Message</label>
                             <textarea name="message" rows="4" placeholder="Your Message"
                                 class="w-full h-32 p-4 rounded-lg bg-[#23272b] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f30116] transition duration-300 resize-none"></textarea>
                         </div>
@@ -498,6 +498,11 @@
                             class="w-full h-16 mt-2 rounded-lg primary-text bg-gradient-to-br from-[#1e2024] to-[#23272b] font-semibold uppercase transition duration-300 cursor-pointer transform hover:-translate-y-2 focus:outline-none focus:ring-2 focus:ring-[#f30116] custom-shadow">
                             Send Message
                         </button>
+
+                        <!-- Message Area -->
+                        <div class="col-12 text-center">
+                            <div id="formMessage" class="mt-3" style="display:none;"></div>
+                        </div>
 
                     </form>
                 </div>
@@ -516,7 +521,8 @@
         </div>
     </footer>
 
-
+    <!-- Template Javascript -->
+    <script src="js/form.js"></script>
 
     <script>
         // Ensure the DOM is loaded before running the script
